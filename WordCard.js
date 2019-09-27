@@ -32,6 +32,8 @@ export default class WordCard extends Component {
     render(){	    
         return(	       
             <div className="App">	            
+            <div className="App">	
+
                 {
                 Array.from(this.state.chars).map((c, i) => <CharacterCard value = {c} key = {i} 
                 attempt={this.state.attempt}
@@ -39,10 +41,9 @@ export default class WordCard extends Component {
                 )
                 }
                <p>Round : {this.state.attempt}</p>
-                <p>{this.state.completed? "you win !!" : ""}</p>
+               <p>Hint : The first program in C </p>
                 <p>{this.state.completed? "You Win !!" : ""}</p>
                 </div>	           
             );	       
-
     } 
 }
