@@ -33,9 +33,8 @@ export default class WordCard extends Component {
         return(	       
 
             <div className="App">	
-                <p>Hint : The first program in C </p>
-                {
-            <h3>จงเรียงประโยคต่อไปนี้ให้ถูกต้อง</h3>
+                <p>Hint : The first program in C </p>{
+            <h3>จงเรียงประโยคต่อไปนี้ให้ถูกต้อง</h3>}
                 {  
                 Array.from(this.state.chars).map((c, i) => <CharacterCard value = {c} key = {i} 
                 attempt={this.state.attempt}
@@ -45,7 +44,8 @@ export default class WordCard extends Component {
                <p>Round : {this.state.attempt}</p>
                <p>Hint : The first program in C </p>
                 <h1><font color="green">{this.state.completed? "You Win !!" : ""}</font></h1>
-                </div>	           
-            );	       
+                </div>
+                       
+            )};
+        	       
     } 
-}
